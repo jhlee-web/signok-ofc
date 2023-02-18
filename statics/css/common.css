@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+/* clearfix / float / left, right */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+/* width */
+.width-50 {
+    width: 50%;
+}
+.width-100 {
+    width: 100%;
+}
+
+/* align */
+.text-align-left {
+    text-align: left;
+}
+.text-align-right {
+    text-align: right;
+}
