@@ -2,3 +2,39 @@
 @import url(./base.css);
 @import url(./common.css);
 @import url(./main.css);
+
+.menu-wrap{
+    display:inline-block;
+}
+.menu__item{
+    display:inline-block;
+    margin-right:8px;
+    border:1px solid black;
+    padding: 8px 16px;
+
+    cursor:pointer;
+}
+.menu__item:last-child{
+    margin-right:0;
+}
+
+.menu__item:hover{
+    background:#eee;
+    transition:.3s;
+}
+
+
+.menu__item .circle{
+    display:inline-block; 
+    width:40px;
+    height:40px;
+    line-height:36px;
+
+    border:1px solid black;
+
+    text-align:center;
+
+    border-radius:999px;
+
+    margin-right:8px;
+}
