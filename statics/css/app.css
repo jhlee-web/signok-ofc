@@ -4,13 +4,13 @@
 @import url(./main.css);
 
 .menu-wrap{
-    display:inline-block;
+    display:block;
 }
 .menu__item{
     display:inline-block;
     margin-right:8px;
     border:1px solid black;
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
 
     cursor:pointer;
 }
@@ -37,4 +37,13 @@
     border-radius:999px;
 
     margin-right:8px;
+}
+
+.footer .is-top{
+    padding:146px 0;
+    background:aliceblue;
+}
+.footer .is-bottom{
+    padding:80px 0;
+    background:#666;
 }

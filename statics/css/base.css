@@ -11,8 +11,9 @@ html, body{
 }
 
 body {
+    font-family:"pretendard";
     color: #333;
-    letter-spacing: -2px;
+    /* letter-spacing: -2px; */
     line-height: 1.43;
 }
 
