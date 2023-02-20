@@ -11,7 +11,7 @@ $(function(){
         autoplay:true,
         autoplaySpeed: 3000,
         touchMove:false,
-        infinite: true,
+        infinite: true
     })
 
     // 시간..대충..어느정도?
@@ -29,9 +29,9 @@ $(function(){
         touchMove:false,
         responsive: [
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
             }
         ]
