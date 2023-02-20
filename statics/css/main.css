@@ -2,6 +2,7 @@
     text-align: center;
 }
 .main-banner img {
+    width: 100%;
     display: block;
 }
 .main-banner p {
@@ -137,6 +138,11 @@
     background-color:red;
 }
 
+/* section 2 */
+#section-02 .container img {
+    display: block;
+    width: 100%;
+}
 
 
 /* section 4 */
@@ -282,6 +288,25 @@
 }
 .l-grid-wrap .content-wrap{
     margin-bottom:160px;
+}
+
+@media all and (max-width: 480px) {
+    .l-grid-wrap .content-wrap .image-wrap,
+    .l-grid-wrap .content-wrap .sub-title-wrap {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .l-grid-wrap .content-wrap .image-wrap img {
+        width: 100%;
+        display: block;
+    }
+    .l-grid-wrap .content-wrap .sub-title-wrap {
+        position: static;
+        top: auto;
+        transform: none;
+        right: auto;
+    }
 }
 
 .text-box{
