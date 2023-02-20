@@ -4,3 +4,12 @@
 @import url(./main.css);
 @import url(./sub-main.css);
 
+.design-image{
+    width:100%;
+}
+
+@media all and (max-width:480px){
+    .design-image{
+        margin-top: 64px;
+    }
+}
