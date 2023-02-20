@@ -109,6 +109,8 @@
 button{
     border:none;
     outline:none;
+    background:none;
+    font-family:"pretendard";
 }
 .button{
     font-weight: 500;
@@ -155,7 +157,7 @@ button{
     height:40px;
     line-height:36px;
 
-    border:1px solid black;
+    border:1px solid #373737;
 
     text-align:center;
 
@@ -163,7 +165,13 @@ button{
 
     margin-right:8px;
 }
-
+@media all and (max-width:480px){
+    .menu__item .circle{
+        width:32px;
+        height:32px;
+        line-height: 32px;
+    }
+}
 /* footer */
 .footer__top{
     width:100%;
@@ -223,6 +231,13 @@ button{
 }
 
 @media all and (max-width:480px){
+    .footer__bottom{
+        padding: 40px 0;
+    }
+    .footer__href-wrap{
+        margin-top: 16px;
+        padding: 0;
+    }
     .container{
         padding: 0 16px;
     }
@@ -230,8 +245,15 @@ button{
         width:20px;
         height:20px;
     }
+    .footer__top{
+        height:auto;
+        padding:40px 0;
+    }
     .footer__top .input-form {
         width: 100%;
+    }
+    .footer__top .input-wrap{
+        width:100%;
     }
     .footer__top .input {
         width: 100%;
@@ -240,6 +262,21 @@ button{
     }
     .footer__top .button{
         width:100%;
+    }
+
+    .footer__top .input-form .button{
+        margin-top: 16px;
+        height: 40px;
+    }
+    .footer__top .control-form .checkbox{
+        display:inline-block
+    }
+    .footer__top .control-form label{
+        display: unset;
+        padding-left: 0;
+    }
+    .footer__bottom .menu__item{
+        display: block;;
     }
 }
 
@@ -253,26 +290,41 @@ button{
 
 /* header */
 .header{
-    position: relative;
+    position: fixed;
+    width:100%;
+    background: rgba(255, 255, 255, 0.32);
+    top: 0;
     height:80px;
-    border:1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+
+    z-index: 9;
+    backdrop-filter: blur(12px);
 }
 .header .container{
-    padding: 16px 0;
+    padding: 0;
     height: 100%;
+    position: relative;
 
 }
 .header .logo-wrap{
+    width:120px;
     height:80px;
     display:inline-block;
+
+    position: relative;
 }
 .header .logo{
-    width:100%;
+    width:auto;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .header .nav{
     position: absolute;
+    top:50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 }
 .header .nav-wrap{
     display:inline-block;
@@ -296,6 +348,13 @@ button{
     display:None;
 }
 
+.header .button-wrap{
+    position: absolute;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media all and (max-width:480px){
     .header{
         height:64px;
@@ -311,16 +370,67 @@ button{
     }
     .header .nav-middle{
         display:none;
+        background: rgba(255,255,255,1);
+        position: absolute;
+        box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16);
+        left: 0;
+        right: 0;
+        padding: 16px;
     }
     #toggle-nav{
         display:block;
         float:right;
+        height:64px;
+        width:64px;
+    }
+    .nav-top{
+        height:64px;
+    }
+    #toggle-nav img{
+        width:20px;
+    }
+    .header .nav{
+        position: unset;
+        transform: unset;
+    }
+    .header .button-wrap{
+        position: unset;
+        transform: unset;
+
+        border-top: 1px solid #eee;
+        padding-top:16px;
+    }
+    .header .button-wrap{
+        width:100%;
+    }
+    .header .button-wrap .button{
+        display:block;
+        width:100%;
+    }
+    .header .nav-wrap{
+        display: block;
+    }
+    .header .nav__item{
+        display: block;
+        text-align: left;
+        font-size: 18px;
+        margin-right: 0;
     }
 }
 
 .button-wrap .button{
     display:inline-block;
     text-align: center;
+}
+
+@media all and (max-width:480px){
+    .button-wrap .button{
+        display:block;
+        margin-bottom:8px;
+    }
+    .button-wrap .button:last-child{
+        margin-bottom: 0;
+    }
 }
 
 /* checkbox */
