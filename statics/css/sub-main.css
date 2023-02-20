@@ -1,0 +1,43 @@
+/* common에 있으면 수정할것 */
+
+
+/*  */
+
+#sub-main-banner .subPage-title-wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+#sub-main-banner .subPage-title-wrap .main-image-wrap {
+    text-align: center;
+    margin: 2rem 0;
+}
+#sub-main-banner .subPage-title-wrap .main-image-wrap img {
+    display: block;
+    margin: 0 auto;
+}
+#sub-main-banner .button-wrap {
+    text-align: center;
+}
+
+.toggle-wrap{
+
+}
+.toggle-wrap .toggle-bg {
+    display: inline-block;
+    width: 64px;
+    height: 32px;
+    border-radius: 99px;
+    background-color: #959595;
+    position: relative;
+}
+.toggle-wrap .toggle-bg .toggle-switch {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 99px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+}
