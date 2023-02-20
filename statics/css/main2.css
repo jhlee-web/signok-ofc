@@ -11,8 +11,35 @@
 }
 
 #main-banner .container{
+    margin-top: 80px;
     padding:160px 0;
+
+    position: relative;
 }
+
+#main-banner .image-wrap {
+    width: unset;
+    height: unset;
+    border-radius: unset;
+    box-shadow: unset;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media all and (max-width:480px){
+    #main-banner .container{
+        margin-top: 64px;
+        padding:160px 0;
+    }
+
+    #main-banner .image-wrap {
+        position:unset;
+        transform: unset;;
+    }
+}
+
 
 .title-wrap.is-center p{
     text-align:center;
