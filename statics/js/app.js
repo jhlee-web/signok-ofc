@@ -33,11 +33,13 @@ $(function(){
 
     $('#main-customer-review .slide-wrap').slick({
         dots: true,
+        arrows:true,
         slideToShow:1,
-        // autoplay:true,
+        //autoplay:true,
         autoplaySpeed: 3000,
         touchMove:false,
         infinite: true,
+        visibleWidth:true,
     })
 
 })
