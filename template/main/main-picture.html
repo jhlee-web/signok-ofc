@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     
-        <link rel="stylesheet" href="/statics/css/main.css">
+        <link rel="stylesheet" href="/statics/css/main2.css">
         <script src="/statics/lib/jquery-3.6.1.min.js"></script>
 
         <script src="/statics/js/common.js"></script>
-        <script src="/statics/js/main.js"></script>
+        <script src="/statics/js/main2.js"></script>
 
         <!-- slick -->
         <link rel="stylesheet" type="text/css" href="/statics/lib/slick/slick.css"/>
@@ -22,31 +22,22 @@
     <header class="header"></header>
     
     <main class="main">
-            <article class="article main-banner">
+            <article class="article" id="main-banner">
                 <div class="container">
-                    <img src="/statics/img/main-banner.png" alt="세상의모든계약">
-                    <p class="">전자계약 이제 선택이 아닌 필수입니다.</p>
-                    <p class="">누구나 쉽게 사용할 수 있는 전자계약<br>이제 signOK 와 시작하세요.</p>
-                </div>
-            </article>
-            <aritcle id="seciton-02" class="article has-background">
-                <div class="container ">
-                    <div class="content-wrap clearfix">
-                        <div class="float-left width-50">
-                            <img src="/statics/img/section_02.png" alt="signOK" class="">
+                    <div class="text-button-wrap">
+                        <div class="text-wrap text-align-left">
+                            <p class="is-heading-1">누구나 쉬운,<br>
+                                전자계약 싸인오케이</p>
+                            <p class="is-remark is-heading-5">싸인오케이로 계약업무의 혁신을 시작해보세요.</p>
                         </div>
-                        <div class="float-right width-50">
-                            <div class="sub-title-wrap">
-                                <p class="main-title margin-4rem">모두가 올릴 때<br>
-                                    <span class="is-primary">signOK</span>는 내립니다.
-                                </p>
-                                <p class="is-heading-5 is-semibold">하지만, 혜택은 늘고 더 편리해졌습니다.</p>
-                            </div>
+                        <div class="button-wrap">
+                            <button type="button" class="button">무료 체험하기</button>
+                            <button type="button" class="button">도입 체험하기</button>
                         </div>
                     </div>
                 </div>
-            </aritcle>
-            <!-- process -->
+            </article>
+            
             <article id="main-process" class="article" >
                 <div class="container">
                     <div class="title-wrap is-center">
@@ -185,30 +176,11 @@
                             </div>
                             <div class="sub-title-wrap float-right">
                                 <p class="sub-title">비대면계약</p>
-                                <p class="main-title">누구나 쉽게 비대면으로<br>전자계약을 할 수 있습니다</p>
-                                <p class="description">언제 어디서나 시간과 장소에 상관 없이 쉽고 빠르게 계약할 수 있습니다</p>
-                            </div>
-                        </div>
-                        <div class="content-wrap clearfix">
-                            <div class="image-wrap float-right">
-                                <img src="/statics/img/section_04/02.png"
-                                class="" alt="">
-                            </div>
-                            <div class="sub-title-wrap float-left">
-                                <p class="sub-title">대량발송</p>
-                                <p class="main-title">클릭 한 번으로 전 직원에게<br>근로계약서를 발송할 수 있습니다.</p>
-                                <p class="description">대량발송 기능을 통해 대량발송을 해보세요<br>업무시간과 비용을 한껏 줄여줍니다</p>
-                            </div>
-                        </div>
-                        <div class="content-wrap clearfix">
-                            <div class="image-wrap float-left">
-                                <img src="/statics/img/section_04/03.png"
-                                class="" alt="">
-                            </div>
-                            <div class="sub-title-wrap float-right">
-                                <p class="sub-title">링크서명</p>
-                                <p class="main-title">카카오톡과 이메일을 통해<br>전자서명이 가능합니다</p>
-                                <p class="description">서명 대상자에게 카톡 또는 이메일로 지정하여<br>계약서를 보낼 수 있습니다</p>
+                                <p class="main-title">
+                                    이메일, 카카오톡으로<br>
+                                    쉽고 빠르게 계약 체결!
+                                </p>
+                                <p class="">추천문서 : 서명이 필요한 모든 문서</p>
                             </div>
                         </div>
                         <div class="content-wrap clearfix">
@@ -218,8 +190,39 @@
                             </div>
                             <div class="sub-title-wrap float-left">
                                 <p class="sub-title">대면계약</p>
-                                <p class="main-title">따라쓰기 기능으로 현장에서<br>바로 계약이 가능합니다.</p>
-                                <p class="description">빠른 전자계약서 작성 및 따라쓰기 기능으로<br>현장에서 바로 서명을 진행할 수 있습니다</p>
+                                <p class="main-title">
+                                    하나의 기기를 통해 서명대상자와<br>
+                                    직접만나 바로 계약 체결!
+                                </p>
+                                <p class="">추천문서 : 근로/연봉계약서, 주주총회동의서, 헬스장 회원계약서 등</p>
+                            </div>
+                        </div>
+                        <div class="content-wrap clearfix">
+                            <div class="image-wrap float-right">
+                                <img src="/statics/img/section_04/02.png"
+                                class="" alt="">
+                            </div>
+                            <div class="sub-title-wrap float-left">
+                                <p class="sub-title">대량발송</p>
+                                <p class="main-title">
+                                    여러 번 보낼 필요없이<br>
+                                    수백건의 계약서도 한번에 체결!
+                                </p>
+                                <p class="">추천문서 : 근로계약, 연봉계약, 동의서 등</p>
+                            </div>
+                        </div>
+                        <div class="content-wrap clearfix">
+                            <div class="image-wrap float-left">
+                                <img src="/statics/img/section_04/03.png"
+                                class="" alt="">
+                            </div>
+                            <div class="sub-title-wrap float-right">
+                                <p class="sub-title">링크서명</p>
+                                <p class="main-title">
+                                    불특정 다수의 서명이 필요하다면,<br>
+                                    QR/ URL로 한번에 체결!
+                                </p>
+                                <p class="">추천문서 : 아파트 입주민동의서, 캠페인 참여요청서, 이벤트 개인정보수집동의서 등</p>
                             </div>
                         </div>
                         <div class="content-wrap clearfix">
@@ -229,8 +232,11 @@
                             </div>
                             <div class="sub-title-wrap float-right">
                                 <p class="sub-title">API 제공</p>
-                                <p class="main-title">기업 맞춤형 서비스로<br>업무 효율을 높여보세요</p>
-                                <p class="description">전자계약 API를 이용해 우리회사에 꼭 맞는<br>계약서비스를 구축할 수 있습니다</p>
+                                <p class="main-title">
+                                    싸인오케이를 연동하여<br>
+                                    자사 시스템내에서 계약 체결!
+                                </p>
+                                <p class="description">연동가능 사이트 : 자사 홈페이지, 그룹웨어, ERP, CRM, 플랫폼, 앱 등</p>
                             </div>
                         </div>
                     </div>
@@ -239,29 +245,31 @@
             <!-- 그래프있는 -->
             <article class="article" id="section-05">
                 <div class="container">
-                    <p class="is-heading-2">
-                        싸인오케이는 전자서명에 가장 자신있는<br>
-                        <span class="is-secondary">한국정보인증</span>이 만든 안전한 서비스입니다.
-                    </p>
-                    <div class="l-grid-wrap">
-                        <div class="content-wrap margin-2rem">
-                            <div class="grid__item float-left">
-                                <p class="">전자서명 시장점유율</p>
-                                <p class="is-heading-1">1위</p>
+                    <div class="float-right">
+                        <p class="is-heading-2">
+                            싸인오케이는 전자서명에 가장 자신있는<br>
+                            <span class="is-secondary">한국정보인증</span>이 만든 안전한 서비스입니다.
+                        </p>
+                        <div class="l-grid-wrap">
+                            <div class="content-wrap margin-2rem">
+                                <div class="grid__item">
+                                    <p class="">전자서명 시장점유율</p>
+                                    <p class="is-heading-1">1위</p>
+                                </div>
+                                <div class="grid__item">
+                                    <p class="">공동인증서 고객 수</p>
+                                    <p class="is-heading-1">460만 +</p>
+                                </div>
                             </div>
-                            <div class="grid__item">
-                                <p class="">공동인증서 고객 수</p>
-                                <p class="is-heading-1">460만 +</p>
-                            </div>
-                        </div>
-                        <div class="content-wrap margin-2rem">
-                            <div class="grid__item float-left">
-                                <p class="">신용등급</p>
-                                <p class="is-heading-1">AA</p>
-                            </div>
-                            <div class="grid__item">
-                                <p class="">전자서명인증사업자 & 본인확인기관</p>
-                                <p class="is-heading-1">국내 유일</p>
+                            <div class="content-wrap margin-2rem">
+                                <div class="grid__item float-left">
+                                    <p class="">신용등급</p>
+                                    <p class="is-heading-1">AA</p>
+                                </div>
+                                <div class="grid__item">
+                                    <p class="">전자서명인증사업자 & 본인확인기관</p>
+                                    <p class="is-heading-1">국내 유일</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -270,11 +278,14 @@
             <!-- 100대 기업 -->
             <article class="article" id="main-logo-section">
                 <div class="container">
-                    <p class="is-heading-3 text-align-center">signOK는 국내 100대 기업과 함께 합니다.</p>
+                    <p class="is-heading-1 text-align-center">
+                        싸인오케이는<br>
+                        국내 100대 기업과 함께합니다.
+                    </p>
+                    <ul class="logo-wrap">
+                    </ul>
                 </div>
                 <!-- logo wrap -->
-                <ul class="logo-wrap">
-                </ul>
             </article>
             <!-- 고객후기 -->
             <article claass="article" id="main-customer-review">
