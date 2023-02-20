@@ -47,3 +47,14 @@
     padding:80px 0;
     background:#666;
 }
+
+
+.header .nav-wrap{
+    display:inline-block;
+    max-width:264px;
+    margin: 0 auto;
+}
+.header .nav__item{
+    padding: 8px 0;
+    
+}
