@@ -106,13 +106,17 @@
 }
 
 /* button */
-.button{
-    border:1px solid black;
-    padding:8px 16px;
+button{
+    border:none;
+    outline:none;
 }
-.button.is-submit{
-    background:#E6F2FC;
-    color:#54A5EB;
+.button{
+    padding:8px 16px;
+    border-radius:16px;
+}
+.button.is-primary{
+    background:#ee3649;
+    color:#fff;
 }
 
 .input{
@@ -122,9 +126,7 @@
 .input-form .input{
     margin-right:16px;
 }
-.control-form .checkbox{
-    margin-right:8px;
-}
+
 
 .menu-wrap{
     display:block;
@@ -170,11 +172,41 @@
     background:url('/statics/img/footer_top.png') no-repeat;
     background-size: cover;;
 }
-
-.footer p {
+.footer__top .text-wrap{
+    margin-bottom: 48px;
+}
+.footer__top p {
     color:#fff;
 }
-
+.footer__top .text-wrap .is-heading-3{
+    font-weight:600;
+    margin-bottom: 8px;
+}
+.footer__top .input-wrap{
+    display:inline-block;
+    margin-bottom:16px;
+}
+.footer__top .input-form{
+    margin: 0 auto;
+    width:576px;
+    
+}
+.footer__top .input{
+    border:0;
+    height:48px;
+    line-height:48px;
+    width:400px;
+    border-radius:16px;
+    background:#fff;
+    padding: 0 16px;
+    margin-bottom:8px;
+}
+.footer__top .input-form .button{
+    height: 48px;
+}
+.footer__top label{
+    color:#fff;
+}
 .footer__bottom{
     padding:80px 0;
     background:#373737;
@@ -189,6 +221,26 @@
 .footer__href-wrap{
     padding:26px 0;
 }
+
+@media all and (max-width:480px){
+    .container{
+        padding: 0 16px;
+    }
+    .checkbox{
+        width:20px;
+        height:20px;
+    }
+    .footer__top .input-form {
+        width: 100%;
+    }
+    .footer__top .input {
+        width: 100%;
+    }
+    .footer__top .button{
+        width:100%;
+    }
+}
+
 .list__item{
     display: inline-block;
     margin-right:16px;
@@ -206,4 +258,39 @@
 .header .nav__item{
     padding: 8px 0;
     
+}
+
+/* checkbox */
+input[type="checkbox"],
+input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    box-shadow: none;
+}
+.control-form{
+    display:table
+}
+.control-form .checkbox,
+.control-form label{
+    display:table-cell;
+    vertical-align: middle;;
+}
+.control-form label{
+    padding-left:8px;
+}
+.checkbox{
+    background: #fff;
+    border: 1px solid #E0DDE9;
+    border-radius: 99%;
+    width: 24px;
+    height: 24px;
+}
+.checkbox + label{
+    height:24px;
+}
+.checkbox:checked{
+    background:red;
 }
