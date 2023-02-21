@@ -116,6 +116,11 @@ button{
     font-family:"pretendard";
     cursor:pointer;
 }
+button:disabled,
+button[disabled]{
+    cursor: no-drop!important;
+    background:#c4c4c4!important;
+}
 .button{
     font-weight: 500;
     padding:12px 24px;

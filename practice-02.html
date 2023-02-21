@@ -83,10 +83,10 @@
                                         <butotn type="button" class="button is-primary">만들기</butotn>
                                     </div>
                                     <div class="result-wrap">
-                                        <div class="reuslt__item is-sign">
+                                        <div class="result__item is-sign">
                                             <img src="/statics/img/practice/signature_sample.png">
                                         </div>
-                                        <div class="reuslt__item is-sign">
+                                        <div class="result__item is-sign">
                                             <img src="/statics/img/practice/signature_sample.png">
                                         </div>
                                     </div>
@@ -102,16 +102,16 @@
                                         <butotn type="button" class="button is-primary">만들기</butotn>
                                     </div>
                                     <div class="result-wrap">
-                                        <div class="reuslt__item is-stamp">
+                                        <div class="result__item is-stamp">
                                             <img src="/statics/img/practice/stamp_smaple.png">
                                         </div>
-                                        <div class="reuslt__item is-stamp">
+                                        <div class="result__item is-stamp">
                                             <img src="/statics/img/practice/stamp_smaple.png">
                                         </div>
-                                        <div class="reuslt__item is-stamp">
+                                        <div class="result__item is-stamp">
                                             <img src="/statics/img/practice/stamp_smaple.png">
                                         </div>
-                                        <div class="reuslt__item is-stamp">
+                                        <div class="result__item is-stamp">
                                             <img src="/statics/img/practice/stamp_smaple.png">
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                         
-                            <button type="button" class="width-100 button is-primary">저장</button>
+                            <button type="button" disabled class="width-100 button is-primary save-button">다운로드</button>
                         
                     </div>
 
@@ -130,10 +130,17 @@
     </body>
     <script>
         function toggleTabButton(tabName){
-            $('.tab-container__item, .tab__item').removeClass('is-active')
+            $('.tab-container__item, .tab__item').removeClass('is-active');
             $('.tab-container__item[data-tab='+tabName+']').addClass('is-active');
-            $('.tab__item[data-tab='+tabName+']').addClass('is-active')
+            $('.tab__item[data-tab='+tabName+']').addClass('is-active');
+            $('.save-button').prop('disabled',true);
         }
+
+        $('.result__item').on('click', function() {
+            $('.result__item').removeClass('is-active');
+            $(this).addClass('is-active');
+            $('.save-button').prop('disabled',false);
+        })
         
     </script>
     </html>
