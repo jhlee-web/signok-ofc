@@ -134,6 +134,7 @@
             $('.tab-container__item[data-tab='+tabName+']').addClass('is-active');
             $('.tab__item[data-tab='+tabName+']').addClass('is-active');
             $('.save-button').prop('disabled',true);
+            $('.result__item').removeClass('is-active');
         }
 
         $('.result__item').on('click', function() {
