@@ -129,6 +129,9 @@ button{
     background:#ee3649;
     color:#fff;
 }
+.button.is-line{
+    border:1px solid #c4c4c4
+}
 .button.is-secondary{
     background:#0079E1;
     color:#fff;
@@ -527,3 +530,22 @@ input[type="radio"]{
 .checkbox:checked{
     background:red;
 }
+
+.toggle-icon-box{
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.toggle-icon-box .icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.tab__item .icon.is-active{
+   display: none;
+}
+.tab__item.is-active .icon.is-active{
+    display: block;
+ }
