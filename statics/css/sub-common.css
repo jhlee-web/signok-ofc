@@ -71,3 +71,11 @@
     left: 4px;
     transform: translateY(-50%);
 }
+
+@media all and (max-width:480px){
+    
+    #sub-main-banner .button {
+        margin-right:0;
+        width:100%;
+    }
+}
