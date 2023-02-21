@@ -6,6 +6,14 @@ $(function(){
         $('#main-logo-section .logo-wrap').append(item)
     }
 
+    $('#main-process .slide-wrap').slick({
+        arrows:false,
+        slideToShow:1,
+        autoplay:true,
+        autoplaySpeed: 3000,
+        touchMove:false,
+        infinite: true
+    })
    
     $('#main-customer-review .card-wrap').slick({
         speed: 5000,

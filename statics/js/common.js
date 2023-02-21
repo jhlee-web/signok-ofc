@@ -14,6 +14,7 @@ function openModal(pageName,modalName){
     let modal = $('<img class="modal" id="modal_this" src="/modal/modal_'+pageName+'_'+modalName+'.png">')
     modalBg.append(modal)
     $('body').append(modalBg);
+    modal.show();
 }
 
 function removeModal(elemId){
