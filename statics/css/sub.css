@@ -210,42 +210,5 @@
     margin-right: 0;
 }
 
-@media all and (max-width:480px){
 
-    .sub-title-wrap .button-wrap .button{
-        width:100%;
-    }
-   
-    .float-right,.float-left{
-        float: unset;;
-    }
-    #practice-section-02 .image-wrap{
-        width:100%
-    }
-    .sub-title-wrap{
-        position: unset;
-        transform: unset;
 
-        margin-top: 32px;
-    }
-    .sub-title-wrap .button-wrap{
-        margin-top: 16px;
-    }
-
-    #practice-signature{
-        width:100%;
-        height:auto;
-
-        margin-top:32px;
-        
-    }
-    
-    .grid__item.theme-sub{
-        width:28%;
-        /* margin-right: 0; */
-    }
-
-    .sub-title-wrap .sub-title, .sub-title-wrap .main-title{
-        margin-bottom: 8px;
-    }
-}
