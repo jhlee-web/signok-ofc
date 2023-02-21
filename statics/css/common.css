@@ -237,6 +237,24 @@ button{
 .footer__top label{
     color:#fff;
 }
+
+.footer__top .button-wrap {
+    text-align: center;
+}
+.footer__top .button-wrap .button {
+    min-width: 200px;
+    border-radius: 16px;
+}
+.footer__top .button-wrap .button.is-primary {
+    background-color: #ee3649;
+    color: #fff;
+    margin-right: 16px;
+}
+.footer__top .button-wrap .button.is-border {
+    color: #ee3649;
+    border: 1px solid #ee3649;
+}
+
 .footer__bottom{
     padding:80px 0;
     background:#373737;
