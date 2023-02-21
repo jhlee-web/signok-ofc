@@ -72,11 +72,24 @@
 
 
 /* theme-sub */
-.has-background.is-half{
+#practice-signature{
     width: 640px;
-    height: 480px;
+    height: 400px;
+    padding:16px;
+    border-radius: 16px;
+}
+.grid-wrap{
+    margin-bottom: 16px;;
+}
+.grid-wrap:last-child{
+    margin-bottom: 0;
 }
 .grid__item.theme-sub{
+    width:33.3333%;
+    max-width:184px;
     min-width: unset;
+    margin-right: 16px;
+}
+.grid-wrap .grid__item:last-of-type{
     margin-right: 0;
 }

@@ -1,7 +1,12 @@
 $(function(){
     // header,footer load
     $('.header').load('/template/include/inc_headerwrap.html');
-    $('.footer').load('/template/include/inc_footerwrap.html')  
+    if($('.footer').hasClass('has-form')){
+        $('.footer').load('/template/include/inc_footerWrap_form.html');
+    }
+    else{
+        $('.footer').load('/template/include/inc_footerWrap_button.html');
+    }  
 })
 
 function openModal(pageName,modalName){
