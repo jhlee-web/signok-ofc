@@ -197,22 +197,19 @@
     height: 80px;
     cursor: pointer;
 }
-.result__item.is-sign.is-active {
+.result__item.is-active {
     border: 1px solid #ee3649
 }
 .result__item.is-sign:nth-child(2n){
     margin-right: 0;
 }
-
 .result__item.is-stamp{
     margin-right: 16px;
     width:23%;
     height: 152px;
-
 }
-.reuslt__item.is-stamp:nth-child(4n){
+.result__item.is-stamp:nth-child(4n){
     margin-right: 0;
-
 }
 
 @media all and (max-width:480px){
