@@ -249,6 +249,7 @@ button[disabled]{
 }
 .footer__top .input-form .button{
     height: 48px;
+    vertical-align: top;;
 }
 .footer__top label{
     color:#fff;
