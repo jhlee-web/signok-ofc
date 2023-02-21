@@ -7,41 +7,83 @@
         <title>체험및문의|도장</title>
     
         <link rel="stylesheet" href="/statics/css/app.css">
+        <link rel="stylesheet" href="/statics/css/sub.css">
 
         <script src="/statics/lib/jquery-3.6.1.min.js"></script>
         <script src="/statics/js/common.js"></script>
-        <script src="/statics/js/main.js"></script>
-
     </head>
     <body>
         <header class="header"></header>
         <main class="">
-            <img class="design-image" src="/practice-02.jpg" alt="practice" usemap="#imagemap">
-            <map name="imagemap">
-                <area shape="rect"
-                coords="765,574,944,628"
-                alt="service"
-                href="/feature.html">
-                <area shape="rect"
-                coords="977,574,1156,628"
-                alt="signup"
-                href="javscript:void(0)">
-                
-                <area shape="rect"
-                coords="427,1802,645,1850"
-                alt="sign"
-                href="/javascript:void(0)">
-                <area shape="rect"
-                coords="1042,1155,1272,1203"
-                alt="incert"
-                href="javscript:void(0)">
-                <area shape="rect"
-                coords="1288,1155,1518,1203"
-                alt="email"
-                href="javscript:void(0)">
-            </map>
+            <article id="sub-main-banner" class="article">
+                <div class="container">
+                    <div class="subPage-title-wrap">
+                        <p class="is-heading-1 sub-banner-title">
+                            모두 궁금한 싸인오케이,<br>
+                            지금 체험해보세요.
+                        </p>
+                        <div class="main-image-wrap"><img src="./statics/img/practice/sub-header.png" alt="가격안내"></div>
+                        <div class="button-wrap">
+                            <button type="button " class="button is-secondary">서비스 소개 확인</button>
+                            <a class="button is-secondary-line" href="javascript:void(0)">무료로 시작하기</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="practice-section-02" class="article">
+                <div class="container">
+                    <p>전자 서명 만들기</p>
+                    <p>나만의 전자서명을 간편하게 만들어보세요.</p>
+                    <div class="tab-wrap">
+                        <ul class="menu-wrap ">
+                            <li class="tab__item"
+                            data-tab="draw">
+                                <img src="" alt="draw" icon="">
+                                <p class="">그리기</p>
+                            </li>
+                            <li class="tab__item"
+                            data-tab="signature">
+                                <img src="" alt="draw" icon="">
+                                <p class="">서명입력</p>
+                            </li>
+                            <li class="tab__item"
+                            data-tab="stamp">
+                                <img src="" alt="draw" icon="">
+                                <p class="">도장</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-container-wrap">
+                        <div class="tab-container__item"
+                        data-tab="draw">
+                            <div class="">
+                                <canvas class=""></canvas>
+                                <button type="button" class="button">다시 그리기</button>
+                            </div>
+                        </div>
+                        <div class="tab-container__item"
+                        data-tab="signature">
+                            <div class="input-form">
+                                <input type="text" class="input theme-sub"
+                                placeholder="이름 최대 9자">
+                                <butotn type="button" class="button is-primary">만들기</butotn>
+                            </div>
+                            <div class="result-wrap"></div>
+                        </div>
+                        <div class="tab-container__item"
+                        data-tab="stamp">
+                            <div class="input-form">
+                                <input type="text" class="input theme-sub"
+                                placeholder="이름 최대 9자">
+                                <butotn type="button" class="button is-primary">만들기</butotn>
+                            </div>
+                            <div class="result-wrap"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </main>
-        <!-- <footer class="footer"></footer> -->
+        <footer class="footer"></footer>
     </body>
     <script>
 
