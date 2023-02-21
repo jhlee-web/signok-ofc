@@ -5,6 +5,7 @@
 @import url(./sub-main.css);
 
 .design-image{
+    display:block;
     width:100%;
 }
 
