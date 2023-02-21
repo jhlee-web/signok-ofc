@@ -5,6 +5,7 @@
 /* main-banner */
 .main-banner {
     text-align: center;
+    margin-top: 80px;
 }
 .main-banner img {
     width: 100%;
@@ -61,6 +62,26 @@
     color: #666666;
     font-size: 20px;
 }
+.main-banner .main-text-area {
+    position: relative;
+    margin-bottom: 80px;
+}
+.main-banner .main-text-area .main-text {
+    font-weight: 800;
+    font-size: 80px;
+    position: absolute;
+    left: 64px;
+    top: 32px;
+    margin-top: 0;
+}
+.main-banner .main-text-area img {
+    display: block;
+    width: 350px;
+    position: absolute;
+    right: 64px;
+    top: 135px;
+}
+
 /* common & main-banner */
 @media all and (max-width:768px) {
     .article {
@@ -91,6 +112,20 @@
     }
     .main-banner p {
         margin-top: 24px; 
+    }
+    .main-banner .main-text-area {
+        margin-bottom: 30px;
+    }
+    .main-banner .main-text-area .main-text {
+        font-size: 32px;
+        left: 0px;
+        top: -50px;
+        margin-top: 0;
+    }
+    .main-banner .main-text-area img {
+        width: 120px;
+        right: 0px;
+        top: -15px;
     }
 }
 
