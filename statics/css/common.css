@@ -111,17 +111,26 @@ button{
     outline:none;
     background:none;
     font-family:"pretendard";
+    cursor:pointer;
 }
 .button{
     font-weight: 500;
     padding:12px 24px;
     border-radius:16px;
+    transition: .3s;
 }
 .button.is-primary{
     background:#ee3649;
     color:#fff;
+    
 }
-
+.button.is-primary:hover{
+    filter: brightness(1.1);
+}
+.button.is-primary:active{
+    filter: brightness(0.9);
+    
+}
 .input{
     padding:12px 24px;
 }
@@ -339,6 +348,10 @@ button{
 
     margin-right: 16px;
     
+}
+.nav__item:hover{
+    background: none;
+    color: #EE3649;
 }
 .header .nav__item:last-child{
     margin-right: 0;
