@@ -168,6 +168,7 @@
 
 .tab-wrap .result-wrap{
     padding: 8px 32px;
+    text-align: center;
 }
 
 .text-wrap .is-heading-2{
@@ -177,30 +178,33 @@
     font-size: 20px;
 }
 
-.reuslt__item{
+.result__item{
     border: 1px solid #c4c4c4;
     border-radius: 16px;
     
     display: inline-block;
     position: relative;
 }
-.reuslt__item img{
+.result__item img{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.reuslt__item.is-sign{
+.result__item.is-sign{
     margin-right: 16px;
     width:48%;
     height: 80px;
-
+    cursor: pointer;
 }
-.reuslt__item.is-sign:nth-child(2n){
+.result__item.is-sign.is-active {
+    border: 1px solid #ee3649
+}
+.result__item.is-sign:nth-child(2n){
     margin-right: 0;
 }
 
-.reuslt__item.is-stamp{
+.result__item.is-stamp{
     margin-right: 16px;
     width:23%;
     height: 152px;
@@ -208,7 +212,45 @@
 }
 .reuslt__item.is-stamp:nth-child(4n){
     margin-right: 0;
+
 }
 
+@media all and (max-width:480px){
 
+    .sub-title-wrap .button-wrap .button{
+        width:100%;
+    }
+   
+    .float-right,.float-left{
+        float: unset;;
+    }
+    #practice-section-02 .image-wrap{
+        width:100%
+    }
+    .sub-title-wrap{
+        position: unset;
+        transform: unset;
 
+        margin-top: 32px;
+    }
+    .sub-title-wrap .button-wrap{
+        margin-top: 16px;
+    }
+
+    #practice-signature{
+        width:100%;
+        height:auto;
+
+        margin-top:32px;
+        
+    }
+    
+    .grid__item.theme-sub{
+        width:28%;
+        /* margin-right: 0; */
+    }
+
+    .sub-title-wrap .sub-title, .sub-title-wrap .main-title{
+        margin-bottom: 8px;
+    }
+}
