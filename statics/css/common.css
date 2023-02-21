@@ -421,7 +421,7 @@ button{
     transform: translateY(-50%);
 }
 
-@media all and (max-width:480px){
+@media all and (max-width:1024px){
     .header{
         height:64px;
     }
@@ -481,6 +481,9 @@ button{
         text-align: left;
         font-size: 18px;
         margin-right: 0;
+    }
+    .header .nav__item a {
+        text-align: center;
     }
 }
 
