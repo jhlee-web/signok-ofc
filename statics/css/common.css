@@ -118,16 +118,29 @@ button{
     padding:12px 24px;
     border-radius:16px;
     transition: .3s;
+    font-size:16px;
+    line-height:1.5;
+    white-space: nowrap;
+}
+.button > img{
+    padding-left:8px;
 }
 .button.is-primary{
     background:#ee3649;
     color:#fff;
-    
 }
-.button.is-primary:hover{
+.button.is-secondary{
+    background:#0079E1;
+    color:#fff;
+}
+.button.is-secondary-line{
+    border:1px solid #0079E1;
+    color:#0079E1;
+}
+.button:hover{
     filter: brightness(1.1);
 }
-.button.is-primary:active{
+.button:active{
     filter: brightness(0.9);
     
 }

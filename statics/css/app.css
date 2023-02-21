@@ -1,8 +1,8 @@
-@import url(./reset.css);
-@import url(./base.css);
-@import url(./common.css);
-@import url(./main.css);
-@import url(./sub-main.css);
+@import url(/statics/css/reset.css);
+@import url(/statics/css/base.css);
+@import url(/statics/css/common.css);
+@import url(/statics/css/main.css);
+@import url(/statics/css/sub-common.css);
 
 .design-image{
     display:block;

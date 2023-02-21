@@ -1,0 +1,82 @@
+
+@import url(/statics/css/reset.css);
+@import url(/statics/css/base.css);
+@import url(/statics/css/common.css);
+@import url(/statics/css/sub-common.css);
+
+
+/* feature-section-2 */
+#feature-section-02{
+    padding:200px 0;
+}
+#feature-section-02 .title-wrap{
+    margin-bottom:120px;
+}
+#feature-section-02 .image-wrap{
+    background:#fff;
+    width:575px;
+    height:400px;
+    border-radius:32px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16);
+    overflow:hidden;
+    text-align:center;
+}
+#feature-section-02 .image-wrap img{
+    width:100%;
+}
+
+/* feature-section-03 */
+#feature-section-03 {
+    padding: 64px 0;
+}
+#feature-section-03 .sub-title-wrap {
+    position: static;
+    top: none;
+    transform: none;
+}
+
+/* sub-title-wrap */
+.sub-title-wrap .sub-title,
+.sub-title-wrap .main-title{
+    margin-bottom: 16px;
+}
+.sub-title-wrap .button-wrap{
+    margin-top: 32px;
+}
+.sub-title-wrap .button-wrap .button{
+    width:auto;
+    display:inline-block;
+    margin-right: 16px;
+}
+.sub-title-wrap .button-wrap .button:last-child{
+    margin-right: 0;
+}
+
+/* practice-section-2 */
+#practice-section-02{
+    padding:80px 0;
+}
+#practice-section-02 .image-wrap{
+    background:#fff;
+    width:560px;
+    padding: 0 80px;
+   /*  height:400px; */
+   text-align:center;
+}
+#practice-section-02 .image-wrap img{
+    width:100%;
+    border-radius:32px;
+    overflow:hidden;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+
+/* theme-sub */
+.has-background.is-half{
+    width: 640px;
+    height: 480px;
+}
+.grid__item.theme-sub{
+    min-width: unset;
+    margin-right: 0;
+}
