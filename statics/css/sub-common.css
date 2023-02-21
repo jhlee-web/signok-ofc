@@ -18,7 +18,7 @@
 
 /* sub-main 공통 */
 #sub-main-banner {
-    padding: 80px 0;
+    padding: 160px 0 80px 0;
     background:#E6F2FC;
 }
 #sub-main-banner .button{
@@ -70,4 +70,12 @@
     top: 50%;
     left: 4px;
     transform: translateY(-50%);
+}
+
+@media all and (max-width:480px){
+    
+    #sub-main-banner .button {
+        margin-right:0;
+        width:100%;
+    }
 }
