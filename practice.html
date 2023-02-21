@@ -16,10 +16,72 @@
     <body>
         <header class="header"></header>
         <main class="">
+            
+            <!-- defualt -->
+            <div class="modal" id="modal_a">
+                <div class="text-align-right">
+                    <button type="button" class="modal__close-button"
+                    onclick="removeModal('a')">
+                        <img src="/statics/icon/close-line.png" class="">
+                    </button>
+                </div>
+                <div class="modal__title-wrap">
+                    <p class="modal__title">전자계약 체험 신청하기</p>
+                    <p class="text-align-center"><span class="var-title">이메일</span>로 전자계약 체험 링크가 발송됩니다.</p>
+                </div>
+                <div class="modal__content">
+                    <form class="input-form">
+                        <div class="input-box">
+                            <input type="text" class="input modal__input" placeholder="성명*" reuqired>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input modal__input" placeholder="이메일*" reuqired>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal__content">
+                    <div class="control-form">
+                        <input type="checkbox" class="checkbox" id="agree-foruteen">
+                        <label for="agree-foruteen">(필수) 만 14세 이상 이용자 입니다.</label>
+                    </div>
+                    <div class="control-form">
+                        <input type="checkbox" class="checkbox" id="agree-term">
+                        <label for="agree-term">(필수)개인정보 수집 및 이용, 마케팅 정보 수신에 동의합니다. </label>
+                        <a href="javascript:void(0)" class="button is-secondary-text text-align-right">자세히 보기</a>
+                    </div>
+
+                </div>
+                <div class="text-align-center">
+                    <button type="button" class="button is-primary"
+                    onclick="oepnElemModal(null,'b')"
+                    >신청하기</button>
+                </div>
+            </div>
+            <!-- success -->
+            <div class="modal" id="modal_b">
+                <div class="text-align-right">
+                    <button type="button" class="modal__close-button"
+                    onclick="removeModal('b')">
+                        <img src="/statics/icon/close-line.png" class="">
+                    </button>
+                </div>
+                <p class="modal__title">전자계약 체험 신청하기</p>
+                
+                <div class="modal__content">
+                    <img src="/statics/icon/check-solid.png" alt="success">
+                </div>
+                <div class="modal__content">
+                    <p class="text-align-center">
+                        전자계약 체험 신청이 완료되었습니다.<br>
+                        입력하신 정보로 선택한 계약서 샘플을 발송해드리겠습니다.
+                    </p>
+                </div>
+            </div>
+           
             <article id="sub-main-banner" class="article">
                 <div class="container">
                     <div class="subPage-title-wrap">
-                        <p class="is-heading-1 sub-banner-title">
+                        <p class="is-heading-2 sub-banner-title">
                             모두 궁금한 싸인오케이,<br>
                             지금 체험해보세요.
                         </p>
@@ -49,11 +111,13 @@
                                 싸인오케이 간편체험으로 계약업무의 혁신을 경험해보세요.
                             </p>
                             <div class="button-wrap">
-                                <button type="button " class="button is-secondary">
+                                <button type="button " class="button is-secondary"
+                                onclick="oepnElemModal('카카오톡','a')">
                                     카카오톡으로 체험하기
                                     <img src="/statics/icon/uiw_swap-right.png" class="" alt="shortcut">
                                 </button>
-                                <button type="button " class="button is-secondary">
+                                <button type="button " class="button is-secondary"
+                                onclick="oepnElemModal('이메일','a')">
                                     이메일로 체험하기
                                     <img src="/statics/icon/uiw_swap-right.png" class="" alt="shortcut">
                                 </button>
@@ -98,13 +162,11 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </article>
         </main>
         <footer class="footer"></footer>
     </body>
     <script>
-
     </script>
     </html>

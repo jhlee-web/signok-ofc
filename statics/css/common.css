@@ -139,6 +139,9 @@ button{
     background:#0079E1;
     color:#fff;
 }
+.button.is-secondary-text{
+    color:#0079E1;
+}
 .button.is-secondary-line{
     border:1px solid #0079E1;
     color:#0079E1;
@@ -150,13 +153,7 @@ button{
     filter: brightness(0.9);
     
 }
-.input{
-    padding:12px 24px;
-}
 
-.input-form .input{
-    margin-right:16px;
-}
 
 
 .menu-wrap{
@@ -227,14 +224,22 @@ button{
     width:576px;
     
 }
-.footer__top .input{
+.input{
+    padding:12px 24px;
     border:0;
     height:48px;
     line-height:48px;
+    padding: 0 16px;
+}
+
+.input-form .input{
+    margin-right:16px;
+}
+.footer__top .input{
     width:400px;
     border-radius:16px;
     background:#fff;
-    padding: 0 16px;
+
     margin-bottom:8px;
 }
 .footer__top .input-form .button{
@@ -510,12 +515,16 @@ input[type="radio"]{
     box-shadow: none;
 }
 .control-form{
-    display:table
+    margin-bottom: 8px;
+    text-align:left;
+}
+.contorl-form:last-child{
+    margin-bottom: 0;
 }
 .control-form .checkbox,
 .control-form label{
-    display:table-cell;
-    vertical-align: middle;;
+    display: inline-block;
+    vertical-align: middle;
 }
 .control-form label{
     padding-left:8px;
@@ -531,7 +540,21 @@ input[type="radio"]{
     height:24px;
 }
 .checkbox:checked{
-    background:red;
+    border:1px solid #ee3649;
+    position: relative;
+}
+.checkbox:checked:after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #ee3649;
+    border-radius: 99px;
 }
 
 .toggle-icon-box{

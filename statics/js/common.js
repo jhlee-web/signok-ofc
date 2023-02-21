@@ -10,12 +10,27 @@ $(function(){
 })
 
 function openModal(pageName,modalName){
-    let modalBg = $('<div onclick="removeModal(this)"  class="modal__background"></div>')
-    let modal = $('<img class="modal" src="/modal/modal_'+pageName+'_'+modalName+'.png">')
+    let modalBg = $('<div onclick="removeModal(\'this\')" class="modal__background"></div>')
+    let modal = $('<img class="modal" id="modal_this" src="/modal/modal_'+pageName+'_'+modalName+'.png">')
     modalBg.append(modal)
     $('body').append(modalBg);
 }
 
-function removeModal(_this){
-    $(_this).remove();
+function removeModal(elemId){
+    $('#modal_'+elemId).hide();
+    if($('.modal__background').length > 0 ) {
+        $('.modal__background').hide();
+    }
+}
+
+function oepnElemModal(title,modalName){
+    let modalBg = $('<div class="modal__background"></div>');
+    let modal = $('#modal_'+modalName);
+    
+    $('.modal').hide();
+
+    modalBg.append(modal)
+    $('body').append(modalBg);
+    $('.var-title').text(title)
+    modal.show();
 }
