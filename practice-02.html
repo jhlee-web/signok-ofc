@@ -129,13 +129,10 @@
         <footer class="footer"></footer>
     </body>
     <script>
-        function toggleTabButton(tabName){
-            $('.tab-container__item, .tab__item').removeClass('is-active');
-            $('.tab-container__item[data-tab='+tabName+']').addClass('is-active');
-            $('.tab__item[data-tab='+tabName+']').addClass('is-active');
+        $('.tab__item').on('click',function(){
             $('.save-button').prop('disabled',true);
             $('.result__item').removeClass('is-active');
-        }
+        })        
 
         $('.result__item').on('click', function() {
             $('.result__item').removeClass('is-active');

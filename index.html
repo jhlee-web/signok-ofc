@@ -9,13 +9,14 @@
         <link rel="stylesheet" href="/statics/css/main.css">
         <script src="/statics/lib/jquery-3.6.1.min.js"></script>
 
-        <script src="/statics/js/common.js"></script>
-        <script src="/statics/js/main.js"></script>
-
         <!-- slick -->
         <link rel="stylesheet" type="text/css" href="/statics/lib/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="/statics/lib/slick/slick-theme.css"/>
         <script src="/statics/lib/slick/slick.min.js"></script>
+
+        <script src="/statics/js/common.js"></script>
+        <script src="/statics/js/main.js"></script>
+
 
     </head>
 <body>
@@ -51,7 +52,7 @@
                 </div>
             </aritcle>
             <!-- process -->
-            <article id="main-process" class="article" >
+           <article id="main-process" class="article" >
                 <div class="container">
                     <div class="title-wrap is-center">
                         <p class="sub-title">쉬운 프로세스</p>
@@ -60,19 +61,19 @@
                 </div>
                 <div class="has-background">
                     <ul class="menu-wrap">
-                        <li class="menu__item" data-idx="1" onclick="handelTabButton(this)">
+                        <li class="menu__item" data-idx="1" onclick="toggleTabButton('upload')">
                             <span class="circle">1</span>
                                 계약서 업로드
                         </li>
-                        <li class="menu__item" data-idx="2" onclick="handelTabButton(this)">
+                        <li class="menu__item" data-idx="2" onclick="toggleTabButton('annotation')">
                             <span class="circle">2</span>
                             서명 영역 지정
                         </li>
-                        <li class="menu__item" data-idx="3" onclick="handelTabButton(this)">
+                        <li class="menu__item" data-idx="3" onclick="toggleTabButton('signature')">
                             <span class="circle">3</span>
                             계약서 서명
                         </li>
-                        <li class="menu__item" data-idx="4" onclick="handelTabButton(this)">
+                        <li class="menu__item" data-idx="4" onclick="toggleTabButton('complete')">
                             <span class="circle">4</span>
                             교부 후 완료
                         </li>
@@ -81,7 +82,7 @@
                 <div class="container">
                     <div class="" id="device-preview">
                         <div class="preview-container">
-                            <ul class="slide-wrap is-active" data-idx="1">
+                            <ul class="slide-wrap tab-container__item is-active" data-tab="upload">
                                 <li class="slide__item is-active">
                                     <img src="/statics/img/section_03/01/01.png" alt="" class="">
                                 </li>
@@ -95,75 +96,75 @@
                                     <img src="/statics/img/section_03/01/04.png" alt="" class="">
                                 </li>
                             </ul>
-                            <ul class="slide-wrap" data-idx="2">
+                            <ul class="slide-wrap tab-container__item" data-tab="annotation">
                                 <li class="slide__item is-active">
-                                    <img src="/statics/img/section_03/01/01.png" alt="" class="">
+                                    <img src="/statics/img/section_03/02/01.png" alt="" class="">
                                 </li>
                                 <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/02.png" alt="" class="">
+                                    <img src="/statics/img/section_03/02/02.png" alt="" class="">
                                 </li>
                                 <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/03.png" alt="" class="">
+                                    <img src="/statics/img/section_03/02/03.png" alt="" class="">
                                 </li>
                                 <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/04.png" alt="" class="">
+                                    <img src="/statics/img/section_03/02/04.png" alt="" class="">
                                 </li>
                             </ul>
-                            <ul class="slide-wrap" data-idx="3">
+                            <ul class="slide-wrap tab-container__item" data-tab="signature">
                                 <li class="slide__item is-active">
-                                    <img src="/statics/img/section_03/01/01.png" alt="" class="">
-                                </li>
-                                <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/02.png" alt="" class="">
-                                </li>
-                                <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/03.png" alt="" class="">
-                                </li>
-                                <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/04.png" alt="" class="">
-                                </li>
+                                    <img src="/statics/img/section_03/03/01.png" alt="" class="">
+                                </li>    
+                                <li class="slide__item is-active">
+                                    <img src="/statics/img/section_03/03/01.png" alt="" class="">
+                                </li>  
+                                <li class="slide__item is-active">
+                                    <img src="/statics/img/section_03/03/01.png" alt="" class="">
+                                </li>  
+                                <li class="slide__item is-active">
+                                    <img src="/statics/img/section_03/03/01.png" alt="" class="">
+                                </li>                              
                             </ul>
-                            <ul class="slide-wrap" data-idx="4">
+                            <ul class="slide-wrap tab-container__item" data-tab="complete">
                                 <li class="slide__item is-active">
-                                    <img src="/statics/img/section_03/01/01.png" alt="" class="">
+                                    <img src="/statics/img/section_03/04/01.png" alt="" class="">
                                 </li>
-                                <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/02.png" alt="" class="">
+                                <li class="slide__item is-active">
+                                    <img src="/statics/img/section_03/04/01.png" alt="" class="">
                                 </li>
-                                <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/03.png" alt="" class="">
+                                <li class="slide__item is-active">
+                                    <img src="/statics/img/section_03/04/01.png" alt="" class="">
                                 </li>
-                                <li class="slide__item">
-                                    <img src="/statics/img/section_03/01/04.png" alt="" class="">
+                                <li class="slide__item is-active">
+                                    <img src="/statics/img/section_03/04/01.png" alt="" class="">
                                 </li>
                             </ul>
                         </div>
                         <div class="text-box">
                             <div class="content-wrap">                        
                                 <ul class="sub-title-wrap ">
-                                    <li class="slide__item is-active " data-idx="1">
+                                    <li class="tab-container__item slide__item is-active " data-tab="upload">
                                         <img src="/statics/img/section_03/upload-line.png" alt="icon">
                                         <p class="is-heading-5">계약서 업로드</p>
                                         <p class="">계약서 파일 업로드 한 번으로 계약은 시작됩니다. 문서의 형식은 PDF, 한글, Word, Excel, 이미지 등 어떤 문서도 가능합니다.</p>
                                     </li>                            
-                                    <li class="slide__item " data-idx="2">          
+                                    <li class="slide__item tab-container__item" data-tab="annotation">          
                                         <img src="/statics/img/section_03/selection-fill.png" alt="icon">                    
                                         <p class="is-heading-5">서명 영역 지정</p>
                                         <p class="">
                                             서명 대상자가 서명을 입력해야 서명 영역을 지정해 준 후 카카오톡 또는 이메일로 지정하여 발송하여 언제 어디서든 서명이 가능합니다.
                                         </p>
                                     </li>                            
-                                    <li class="slide__item " data-idx="3">                              
+                                    <li class="slide__item tab-container__item" data-tab="signature">                              
                                         <img src="/statics/img/section_03/edit-line.png" alt="icon">
                                         <p class="is-heading-5">계약서 서명</p>
                                         <p class="">
                                             서명 대상자는 싸인오케이에서 손쉽게 서명/도장을 만들고 언제든 불러와 전달받은 계약서 확인 후 전자 서명을 해 계약을 진행할 수 있습니다.
                                         </p>                               
                                     </li>
-                                    <li class="slide__item " data-idx="4">
+                                    <li class="slide__item tab-container__item" data-tab="complete">
                                        
                                         <img src="/statics/img/section_03/document-line.png" alt="icon">
-                                        <p class="is-heading-5">계약서 업로드</p>
+                                        <p class="is-heading-5">교부 후 완료</p>
                                         <p class="">
                                             모든 서명 대상자가 서명을 완료하게 되면 계약은 즉시 체결되고 문서는 교부됩니다. 안심하세요! 싸인오케이를 통한 전자계약은 ISMS 인증을 받아 믿을 수 있습니다.
                                         </p>

@@ -38,3 +38,9 @@ $(function(){
     })
     
 })
+
+$(document).on('click','.menu__item', function(){
+    if ($('.tab-container__item').hasClass('slick-initialized')) {
+        $('.slide-wrap').slick('slickGoTo',0);
+      }      
+})

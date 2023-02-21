@@ -35,3 +35,12 @@ function oepnElemModal(title,modalName){
     $('.var-title').text(title)
     modal.show();
 }
+
+
+function toggleTabButton(tabName){
+
+
+    $('.tab-container__item, .tab__item').removeClass('is-active');
+    $('.tab-container__item[data-tab='+tabName+']').addClass('is-active');
+    $('.tab__item[data-tab='+tabName+']').addClass('is-active');
+}
